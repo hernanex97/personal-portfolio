@@ -6,6 +6,7 @@ import meter2 from "../../assets/img/meter2.svg";
 import meter3 from "../../assets/img/meter3.svg";
 import colorSharp from "../../assets/img/color-sharp.png";
 import React from 'react';
+import './Skills.css';
 
 export const Skills = () => {
     const responsive = {
