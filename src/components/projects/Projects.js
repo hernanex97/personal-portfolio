@@ -41,6 +41,23 @@ export const Projects = () => {
         }
     ]
 
+    const projects2 = [
+        {
+            title: "",
+            description: "",
+            imgUrl: projImg1,
+        }, {
+            title: "",
+            description: "",
+            imgUrl: projImg2,
+        },
+        {
+            title: "",
+            description: "",
+            imgUrl: projImg3,
+        }
+    ]
+
     return (
         //cambiar classname para que tome bien a donde editar el CSS XDXDXD
         <section className="project" id="project">
@@ -73,8 +90,21 @@ export const Projects = () => {
                                         }
                                     </Row>
                                 </Tab.Pane>
-                                <Tab.Pane eventKey="second">Lorem ipsum dolor sit amet</Tab.Pane>
-                                <Tab.Pane eventKey="third">Lorem ipsum dolor sit amet</Tab.Pane>
+                                <Tab.Pane eventKey="second">
+                                    <Row>
+                                        {
+                                            projects2.map((project, index) => {
+                                                return (
+                                                    <ProjectCard key={index} {...project} />
+                                                )
+                                            })
+                                        }
+                                    </Row>
+                                </Tab.Pane>
+                                <Tab.Pane eventKey="third">
+                                    <Row>
+                                    </Row>
+                                </Tab.Pane>
                             </Tab.Content>
                         </Tab.Container>
                     </Col>
