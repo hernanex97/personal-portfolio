@@ -52,8 +52,11 @@ export const Banner = () => {
                         <div>
                             <span className="tagline">Welcome to my Portfolio</span>
                             <h1>{"Hi, I'm Hernan, "}<span className="wrap">{text}</span></h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                            <button onClick={() => console.log('connect')}>Let's connect <ArrowRightCircle size={25} /></button>
+                            <p>I'm a Full Stack Developer from Argentina. Addicted to coffee and battles against the code.  I'm passionate about software development and "Fútbol". I love Lionel Andres Messi with my life.</p>
+                            <button onClick={(e) => {
+                                e.preventDefault();
+                                window.location.href = '#connect';
+                            }}>Let's connect <ArrowRightCircle size={25} /></button>
                         </div>
                         {/* <TrackVisibility>
                         {
