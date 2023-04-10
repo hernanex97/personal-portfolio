@@ -1,6 +1,6 @@
 /* *********** Skills Css ***********  */
 .skill {
-  padding: 0 0 50px 0;
+  padding: 120px 0 70px 0;
   position: relative;
 }
 
@@ -48,4 +48,19 @@
   margin-right: -35px;
   background-color: #212121;
   margin-left: -35px;
+}
+
+.sql_logo{
+  height: 65%; 
+  width: 65%; 
+  margin-left: 20%;
+}
+.unity_logo{
+  padding-top: 15px;
+}
+
+.firebase_logo{
+  margin-left: 35%;
+  height: 75px; 
+  width: 75px; 
 }

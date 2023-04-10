@@ -1,8 +1,15 @@
 /************ Banner Css ************/
+
+.headderImg {
+  margin-left: 25%;
+  width: 60%;
+  opacity: 1 !important;
+}
+
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
-  background-image: url('../../assets/img/banner-bg.png');
+  background: linear-gradient(1deg, rgba(0, 0, 0, 0.8), rgba(28, 123, 239, 0.1)), url('../../assets/img/wallpaper.png');
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -12,8 +19,9 @@
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 8px 10px;
-  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  /* linear-gradient(90.21deg, #082174 -5.91%, #3db3fc 111.58%); */
+  background: linear-gradient(90.21deg, #070753 -5.91%, #033aee 111.58%);
+  border: 1px solid rgba(255, 255, 255, 0.5); 
   font-size: 20px;
   margin-bottom: 16px;
   display: inline-block;
@@ -27,9 +35,17 @@
   margin-bottom: 20px;
   display: block;
 }
+.banner span {
+  font-size: 45px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1;
+  margin-bottom: 20px;
+  display: block;
+}
 
 .banner p {
-  color: #B8B8B8;
+  color: #ffffff;
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;

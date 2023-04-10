@@ -2,9 +2,7 @@ import { useEffect, useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import logo from '../../assets/img/logo.svg';
 import navIcon1 from '../../assets/img/nav-icon1.svg';
-import navIcon3 from '../../assets/img/nav-icon3.svg';
 import React from 'react';
 import './NavBar.css';
 
@@ -35,7 +33,7 @@ export const NavBar = () => {
             <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
                 <Container>
                     <Navbar.Brand href="#home">
-                        <img src={logo} alt="Logo" />
+                        <p className="logo-text-1">Expósito Hernán</p>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav">
                         <span className='navbar-toggler-icon'></span>
@@ -50,9 +48,7 @@ export const NavBar = () => {
                         <span className='navbar-text'>
                             <div className='social-icon'>
                                 <a href="https://www.linkedin.com/in/expositohernan/" target="_blank" rel="noreferrer noopener"><img src={navIcon1} alt="" ></img></a>
-                                {/* <a href="https://www.instagram.com/hernan_exposito/" target="_blank" rel="noreferrer noopener"><img src={navIcon3} alt="" ></img></a> */}
                             </div>
-                            {/* <button href="#connect" className='vvd' onClick={() => onUpdateActiveLink('connect')}><span>Let's Connect</span></button> */}
                         </span>
                     </Navbar.Collapse>
                 </Container>

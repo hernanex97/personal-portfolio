@@ -1,17 +1,25 @@
-import { Container, Row, Col } from "react-bootstrap";
+import React from 'react';
+import { Container, Row, Col} from "react-bootstrap";
 import Carousel from "react-multi-carousel"
 import "react-multi-carousel/lib/styles.css";
+import './Skills.css';
+
+//#region Imports_icons
 import csharp_ico from "programming-languages-logos/src/csharp/csharp_512x512.png"
-import html_ico from "programming-languages-logos/src/html/html_white_512x512.png"
 import python_ico from "programming-languages-logos/src/python/python_512x512.png"
 import javascript_ico from "programming-languages-logos/src/javascript/javascript_512x512.png"
-import flutter_ico from "programming-languages-logos/src/flutter_2.png"
-import docker_ico from "programming-languages-logos/src/docker.png"
-import k8s_ico from "programming-languages-logos/src/k8s.png"
+import css_ico from "../../assets/img/css_logo.png"
+import html_ico from "../../assets/img/html_white_512x512.png"
+import flutter_ico from "../../assets/img/flutter_2.png"
+import docker_ico from "../../assets/img/docker.png"
+import k8s_ico from "../../assets/img/k8s.png"
+import unity_ico from "../../assets/img/unity_logo_512x512.png"
+import firebase_logo from "../../assets/img/firebase_logo2.png"
+import sql_logo from "../../assets/img/sql_logo.png"
+import colorSharp from "../../assets/img/new-color-sharp.png";
 
-import colorSharp from "../../assets/img/color-sharp.png";
-import React from 'react';
-import './Skills.css';
+//#endregion Imports_icons
+
 
 export const Skills = () => {
   const responsive = {
@@ -34,6 +42,9 @@ export const Skills = () => {
     }
   };
 
+  const logos = [csharp_ico, python_ico, javascript_ico, css_ico, html_ico, 
+                 flutter_ico, docker_ico, k8s_ico, unity_ico, firebase_logo, sql_logo]
+
   return (
     <section className="skill" id="skills">
       <Container>
@@ -41,36 +52,14 @@ export const Skills = () => {
           <Col>
             <div className="skill-bx">
               <h2>Skills</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p>Throughout my career i worked on different projects with different technologies and frameworks for develop Web Apps, Mobile Apps, Desktop App and Games.</p>
               <Carousel responsive={responsive} infinite={true} className="skill-slider" >
-                <div className="item">
-                  <img src={csharp_ico} alt="C#" />
-                  {/* <h5>C#</h5> */}
-                </div>
-                <div className="item">
-                  <img src={python_ico} alt="python" />
-                  {/* <h5>Full Stack</h5> */}
-                </div>
-                <div className="item">
-                  <img src={html_ico} alt="html" />
-                  {/* <h5>App Development</h5> */}
-                </div>
-                <div className="item">
-                  <img src={javascript_ico} alt="javascript" />
-                  {/* <h5>Game Development</h5> */}
-                </div>
-                <div className="item">
-                  <img src={flutter_ico} alt="game" />
-                  {/* <h5>Game Development</h5> */}
-                </div>
-                <div className="item">
-                  <img src={docker_ico} alt="game" />
-                  {/* <h5>Game Development</h5> */}
-                </div>
-                <div className="item">
-                  <img src={k8s_ico} alt="game" />
-                  {/* <h5>Game Development</h5> */}
-                </div>
+                {
+                  logos.map((logo, index) => {
+                    return <ImagesLogos logoName={logo} key={index}/>
+                  })
+                }
+
               </Carousel>
             </div>
           </Col>
@@ -79,5 +68,27 @@ export const Skills = () => {
       <img className="background-image-left" alt="bckgrimg" src={colorSharp} />
     </section>
   )
+}
 
+
+export const ImagesLogos = ({logoName, className}) => {
+
+  if(logoName.includes('firebase')){
+    className='firebase_logo';
+  }
+  else if(logoName.includes('unity')){
+    className='unity_logo';
+  }
+  else if(logoName.includes('sql')){
+    className='sql_logo';
+  }
+  else {
+    className='item';
+  }
+
+  return(
+    <div className={className}>
+      <img src={logoName} alt={logoName}/>
+  </div>
+  );
 }

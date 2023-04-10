@@ -1,58 +1,40 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
-import headderImg from "../../assets/img/header-img.svg";
+import { TypeAnimation } from 'react-type-animation';
+import headderImg from "../../assets/img/herno2.png";
 import './Banner.css';
 import React from 'react';
 // import TrackVisibility from  'react-on-screen';
 
 export const Banner = () => {
-    let [loopNum, setLoopNum] = useState(0);
-    const [isDeleting, setIsDeleting] = useState(false);
-    const toRotate = ["Web Developer", "Full Stack Developer", "Mobile App and Game Developer"]
-    const [text, setText] = useState('');
-    const [delta, setDelta] = useState(300 - Math.random() * 100);
-    const period = 2000;
-
-    useEffect(() => {
-        let ticker = setInterval(() => {
-            tick();
-        }, delta)
-        return () => { clearInterval(ticker) };
-    }, [text])
-
-    const tick = () => {
-        let i = loopNum % toRotate.length;
-        let fullText = toRotate[i];
-        let updatedText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1);
-
-        setText(updatedText);
-
-        if (isDeleting) {
-            setDelta(prevDelta => prevDelta / 2);
-        }
-
-        if (!isDeleting && updatedText === fullText) {
-            setIsDeleting(true);
-            setDelta(period);
-        }
-        else if (isDeleting && updatedText === '') {
-            setIsDeleting(false);
-            setLoopNum(loopNum = 1);
-            setDelta(200);
-        }
-    }
-
-
     return (
         <section className="banner" id="banner">
             <Container>
                 <Row className="align-items-center">
                     <Col xs={12} md={6} xl={7}>
                         <div>
-                            <span className="tagline">Welcome to my Portfolio</span>
-                            <h1>{"Hi, I'm Hernan, "}<span className="wrap">{text}</span></h1>
-                            <p>I'm a Full Stack Developer from Argentina. Addicted to coffee and battles against the code.  I'm passionate about software development and "Fútbol". I love Lionel Andres Messi with my life.</p>
+                            {/* <span className="tagline">Welcome to my Portfolio</span> */}
+                            {/* <h1>{"Hello. \nI'm Hernán! "}<span className="wrap">{text}</span></h1> */}
+                            <h1>{"Hello. \nI'm Hernán! "}</h1>
+                            <TypeAnimation
+                                sequence={[
+                                    'Web & Mobile Developer',
+                                    2000, // Waits 1s
+                                    'Full Stack Developer', 
+                                    2000, // Waits 2s
+                                    'Game Developer',
+                                    2000,
+                                ]}
+                                wrapper="span"
+                                cursor={true}
+                                repeat={Infinity}
+                                deletionSpeed={50}
+                                // style={{ fontSize: '3em', display: 'inline-block' }}
+                            />
+                            {/* <span className="wrap">{text}</span> */}
+                            <p>I'm a Full Stack Developer based in Argentina. Addicted to coffee and coding nights.
+                                Passionate in Software Development, Fútbol, Videogames and Music.</p>
                             <button onClick={(e) => {
                                 e.preventDefault();
                                 window.location.href = '#connect';
@@ -71,7 +53,7 @@ export const Banner = () => {
                         </TrackVisibility> */}
                     </Col>
                     <Col xs={12} md={6} xl={5}>
-                        <img src={headderImg} alt="header-img" />
+                        <img className="headderImg" src={headderImg} alt="header-img" />
                     </Col>
                 </Row>
             </Container>

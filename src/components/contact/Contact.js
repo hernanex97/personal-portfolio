@@ -73,7 +73,7 @@ export const Contact = ({ title, description, imgUrl }) => {
                                 <Col sm={6} className="px-1">
                                     <input type="tel" value={formDetails.phone} placeholder="Phone No." onChange={(e) => onFormUpdate('phone', e.target.value)} />
                                 </Col>
-                                <Col sm={6} className="px-1">
+                                <Col sm={12} className="px-1">
                                     <textarea row={6} value={formDetails.message} placeholder="Write your message here..." onChange={(e) => onFormUpdate('message', e.target.value)} />
                                     <button type="submit"><span>{buttonText}</span></button>
                                 </Col>
