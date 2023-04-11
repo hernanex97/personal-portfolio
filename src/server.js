@@ -18,7 +18,7 @@ app.use(express.json());
 // app.use("/", router);
 
 const myMail = "hernancs10@gmail.com";
-const servPass = "anihrjqorcusossm"
+const servPass = process.env.GMAIL_PASS_SMTP;
 //const servPass = process.env.SMTP_PASS;
 
 const contactEmail = nodemailer.createTransport({
