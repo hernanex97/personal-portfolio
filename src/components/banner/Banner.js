@@ -1,13 +1,12 @@
-import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import { TypeAnimation } from 'react-type-animation';
 import headderImg from "../../assets/img/herno2.png";
 import './Banner.css';
 import React from 'react';
-// import TrackVisibility from  'react-on-screen';
 
 export const Banner = () => {
+
     return (
         <section className="banner" id="banner">
             <Container>
