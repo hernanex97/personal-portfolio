@@ -2,7 +2,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import { TypeAnimation } from 'react-type-animation';
 import headderImg from "../../assets/img/herno2.png";
-import './Banner.css';
+require('./Banner.css');
 import React from 'react';
 
 export const Banner = () => {

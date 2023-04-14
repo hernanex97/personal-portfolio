@@ -2,7 +2,7 @@ import { Container, Row, Col } from "react-bootstrap";
 // import { MailchimpForm } from "../mailchimp_form/Mailchimp";
 import navIcon1 from '../../assets/img/nav-icon1.svg';
 import React from 'react';
-import './Footer.css';
+require('./Footer.css';
 
 export const Footer = () => {
     return (

@@ -2,7 +2,7 @@ import { useState } from "react"
 import { Container, Row, Col } from "react-bootstrap";
 import contactImg from "../../assets/img/contact-img.svg";
 import React from 'react';
-import './Contact.css';
+require('./Contact.css';
 
 export const Contact = ({ title, description, imgUrl }) => {
 
