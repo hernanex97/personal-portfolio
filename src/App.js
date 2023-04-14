@@ -5,8 +5,8 @@ import { Projects } from './components/projects/Projects';
 import { Contact } from './components/contact/Contact';
 import { Footer } from './components/footer/Footer';
 import React from 'react';
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+require('./App.css');
+require('bootstrap/dist/css/bootstrap.min.css');
 
 function App() {
   return (
