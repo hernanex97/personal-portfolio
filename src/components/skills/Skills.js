@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row, Col} from "react-bootstrap";
 import Carousel from "react-multi-carousel"
 import "react-multi-carousel/lib/styles.css";
-require('./Skills.css');
+import'./Skills.css';
 
 //#region Imports_icons
 import csharp_ico from "programming-languages-logos/src/csharp/csharp_512x512.png"

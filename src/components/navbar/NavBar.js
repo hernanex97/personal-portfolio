@@ -1,10 +1,10 @@
+import React from 'react';
 import { useEffect, useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import navIcon1 from '../../assets/img/nav-icon1.svg';
-import React from 'react';
-require('./NavBar.css';
+require('./NavBar.css');
 
 export const NavBar = () => {
     const [activeLink, setActiveLink] = useState('home');
