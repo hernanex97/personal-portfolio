@@ -5,7 +5,9 @@
     font-size: 25px;
     font-weight: 600;
 }
-
+.navbarbrand{
+    padding-top: 1.5% !important;
+}
 .navbar-collapse{
     margin-left: 100px ;
 }

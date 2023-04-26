@@ -24,9 +24,8 @@
   line-height: 1.5em;
   margin: 14px auto 30px auto;
   text-align: center;
-  width: 56%;
+  width: 75%;
 }
-
 
 .project .nav.nav-pills {
   width: 72%;
@@ -166,6 +165,8 @@
   font-weight: 400;
   font-size: 15px;
   letter-spacing: 0.8px;
+  margin-left: 7px;
+  margin-right: 7px;
 }
 
 .background-image-right {
@@ -175,4 +176,17 @@
   width: 35%;
   right: 0;
   z-index: -4;
+}
+
+.playbutton {
+  margin-top: -15px;
+  background-color: #0e2ebd !important;
+  border: none !important;
+  width: 100%;
+}
+.playbutton_not {
+  margin-top: -15px;
+  background-color: #971010 !important;
+  border: none !important;
+  width: 100%;
 }

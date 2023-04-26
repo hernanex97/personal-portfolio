@@ -2,59 +2,81 @@ import React from 'react';
 import { Container, Row, Col, Nav, Tab } from "react-bootstrap";
 import { ProjectCard } from "../project_card/ProjectCard";
 import colorSharp2 from "../../assets/img/new-color-sharp2.png";
-import projImg1 from "../../assets/img/project-img1.png";
-import projImg2 from "../../assets/img/project-img2.png";
-import projImg3 from "../../assets/img/project-img3.png";
+import fastcars from "../../assets/projects-images/fastcars.png"
+import officehero from "../../assets/projects-images/officehero.png"
+import leagofgols from "../../assets/projects-images/leagofgoals.png"
+import foresthope from "../../assets/projects-images/foresthope.png"
+import electrons from "../../assets/projects-images/electrons.png"
+import oversoft from "../../assets/projects-images/OVERSOFT.png"
+import uif from "../../assets/projects-images/uif.png"
+import ibm from "../../assets/projects-images/ibm.png"
 import'./Projects.css' ;
-// import TrackVisibility from  'react-on-screen';
 
 export const Projects = () => {
-    const projects = [
+    const gameprojects = [
         {
-            title: "",
-            description: "",
-            imgUrl: projImg1,
+            title: "Fast Cars",
+            description: "Mobile Game where you are a 🚗 thief and the police starts to chase you. ¿How long can you scape from the police? Made With Unity.",
+            imgUrl: fastcars,
+            url: "https://pressstartteam.itch.io/brakeless",
+            classButton: "playbutton",
+            buttonSTR: "Play"
         }, {
-            title: "",
-            description: "",
-            imgUrl: projImg2,
+            title: "League of Goals",
+            description: "Desktop Local Fútbol ⚽ Game. 2vs2 game with Lego inspiration idea. Made With Unity.",
+            imgUrl: leagofgols,
+            classButton: "playbutton_not",
+            buttonSTR: "Not Available"
         },
         {
-            title: "",
-            description: "",
-            imgUrl: projImg3,
+            title: "Office Hero",
+            description: "You're a Junior Developer starting a new job. Try to survive the office 💀 Made With Unity.",
+            imgUrl: officehero,
+            url: "https://jangames.itch.io/office-hero",
+            classButton: "playbutton",
+            buttonSTR: "Play"
         },
         {
-            title: "",
-            description: "",
-            imgUrl: projImg3,
+            title: "Forest Hope",
+            description: "Humans are irresponsible 😡 Save the forest from the fire! Made With Unity.",
+            imgUrl: foresthope,
+            url: "https://pressstartteam.itch.io/forest-hope",
+            classButton: "playbutton",
+            buttonSTR: "Play"
         },
         {
-            title: "",
-            description: "",
-            imgUrl: projImg1,
+            title: "Electron Attraction",
+            description: "Find your Electron 💘⚡ 2 Players Game. Made With Unity.",
+            imgUrl: electrons,
+            url: "https://pressstartteam.itch.io/electron",
+            classButton: "playbutton",
+            buttonSTR: "Play"
         },
-        {
-            title: "",
-            description: "",
-            imgUrl: projImg2,
-        }
     ]
 
-    const projects2 = [
+    const workProjects = [
         {
-            title: "",
-            description: "",
-            imgUrl: projImg1,
+            title: "Oversoft",
+            description: "Backend Developer Role. Technologies used: C#.NET, VB.NET, SQL SERVER",
+            imgUrl: oversoft,
+            classButton: "playbutton",
+            url: "https://oversoft.net/",
+            buttonSTR: "Website"
         }, {
-            title: "",
-            description: "",
-            imgUrl: projImg2,
+            title: "Argentine Financial Information Unit (UIF)",
+            description: "Full Stack .NET Developer. Technologies used: C#.NET, .NET CORE, ASP.NET, SQL SERVER, Entity Framework, Git, Microsoft TFS.",
+            imgUrl: uif,
+            classButton: "playbutton",
+            url: "https://www.argentina.gob.ar/uif",
+            buttonSTR: "Website"
         },
         {
-            title: "",
-            description: "",
-            imgUrl: projImg3,
+            title: "IBM",
+            description: "Developer and Consultant. Working in projects with multiple clients like Banks & TelCo. Technologies: Openshift, K8s, Docker, API Connect, Watson Assistant, Python, JavaScript.",
+            imgUrl: ibm,
+            classButton: "playbutton",
+            url: "https://www.ibm.com",
+            buttonSTR: "Website"
         }
     ]
 
@@ -65,14 +87,17 @@ export const Projects = () => {
                 <Row>
                     <Col>
                         <h2>Projects</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p>
+                            I had the opportunity to work with a game developers team based on friendship named Press Start Games.
+                            Some of the games we've created, were showcased at some events here in Buenos Aires, Argentina.
+                            Currently working as a Developer and Consultant in IBM, on the Expert Lab's team.</p>
                         <Tab.Container id="projects-tabs" defaultActiveKey="first">
                             <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                                 <Nav.Item>
-                                    <Nav.Link eventKey="first">Personal Projects</Nav.Link>
+                                    <Nav.Link eventKey="first">Games</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link eventKey="second">Work Projects</Nav.Link>
+                                    <Nav.Link eventKey="second">Work</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
                                     <Nav.Link eventKey="third">Games</Nav.Link>
@@ -82,7 +107,7 @@ export const Projects = () => {
                                 <Tab.Pane eventKey="first">
                                     <Row>
                                         {
-                                            projects.map((project, index) => {
+                                            gameprojects.map((project, index) => {
                                                 return (
                                                     <ProjectCard key={index} {...project} />
                                                 )
@@ -93,7 +118,7 @@ export const Projects = () => {
                                 <Tab.Pane eventKey="second">
                                     <Row>
                                         {
-                                            projects2.map((project, index) => {
+                                            workProjects.map((project, index) => {
                                                 return (
                                                     <ProjectCard key={index} {...project} />
                                                 )

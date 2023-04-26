@@ -32,7 +32,7 @@ export const NavBar = () => {
         <section id="home">
             <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
                 <Container>
-                    <Navbar.Brand href="#home">
+                    <Navbar.Brand className="navbarbrand" href="#home">
                         <p className="logo-text-1">Expósito Hernán</p>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav">
