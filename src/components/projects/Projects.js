@@ -10,7 +10,7 @@ import electrons from "../../assets/projects-images/electrons.png"
 import oversoft from "../../assets/projects-images/OVERSOFT.png"
 import uif from "../../assets/projects-images/uif.png"
 import ibm from "../../assets/projects-images/ibm.png"
-import'./Projects.css' ;
+import './Projects.css';
 
 export const Projects = () => {
     const gameprojects = [
@@ -88,9 +88,7 @@ export const Projects = () => {
                     <Col>
                         <h2>Projects</h2>
                         <p>
-                            I had the opportunity to work with a game developers team based on friendship named Press Start Games.
-                            Some of the games we've created, were showcased at some events here in Buenos Aires, Argentina.
-                            Currently working as a Developer and Consultant in IBM, on the Expert Lab's team.</p>
+                            I had the opportunity to work with a team of developers, who are also friends of mine. Together, we funded Press Start Games, and we developed some of the following games - which were showcased at events in Buenos Aires, Argentina. I'm also currently working as a Developer and Consultant of Integration at IBM, on Expert Lab's team.</p>
                         <Tab.Container id="projects-tabs" defaultActiveKey="first">
                             <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                                 <Nav.Item>
@@ -99,9 +97,9 @@ export const Projects = () => {
                                 <Nav.Item>
                                     <Nav.Link eventKey="second">Work</Nav.Link>
                                 </Nav.Item>
-                                <Nav.Item>
+                                {/* <Nav.Item>
                                     <Nav.Link eventKey="third">Games</Nav.Link>
-                                </Nav.Item>
+                                </Nav.Item> */}
                             </Nav>
                             <Tab.Content>
                                 <Tab.Pane eventKey="first">
@@ -126,10 +124,10 @@ export const Projects = () => {
                                         }
                                     </Row>
                                 </Tab.Pane>
-                                <Tab.Pane eventKey="third">
+                                {/* <Tab.Pane eventKey="third">
                                     <Row>
                                     </Row>
-                                </Tab.Pane>
+                                </Tab.Pane> */}
                             </Tab.Content>
                         </Tab.Container>
                     </Col>

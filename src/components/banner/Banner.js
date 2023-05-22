@@ -18,7 +18,7 @@ export const Banner = () => {
                                 sequence={[
                                     'Web & Mobile Developer',
                                     2000, // Waits 1s
-                                    'Full Stack Developer', 
+                                    'Full Stack Developer',
                                     2000, // Waits 2s
                                     'Game Developer',
                                     2000,
@@ -29,8 +29,8 @@ export const Banner = () => {
                                 deletionSpeed={50}
                             />
                             <p>I'm a Developer based in Argentina. Addicted to coffee and coding nights.
-                                Passionate in Software Development, Fútbol, Videogames and Music.
-                                I'm currently working in IBM.</p>
+                                Passionate about Software Development, football, videogames and music.
+                                I'm currently working at IBM.</p>
                             <button onClick={(e) => {
                                 e.preventDefault();
                                 window.location.href = '#connect';

@@ -1,8 +1,8 @@
 import React from 'react';
-import { Container, Row, Col} from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import Carousel from "react-multi-carousel"
 import "react-multi-carousel/lib/styles.css";
-import'./Skills.css';
+import './Skills.css';
 
 //#region Imports_icons
 import csharp_ico from "programming-languages-logos/src/csharp/csharp_512x512.png"
@@ -42,8 +42,8 @@ export const Skills = () => {
     }
   };
 
-  const logos = [csharp_ico, python_ico, javascript_ico, css_ico, html_ico, 
-                 flutter_ico, docker_ico, k8s_ico, unity_ico, firebase_logo, sql_logo]
+  const logos = [csharp_ico, python_ico, javascript_ico, css_ico, html_ico,
+    flutter_ico, docker_ico, k8s_ico, unity_ico, firebase_logo, sql_logo]
 
   return (
     <section className="skill" id="skills">
@@ -52,15 +52,17 @@ export const Skills = () => {
           <Col>
             <div className="skill-bx">
               <h2>Skills</h2>
-              <p>Throughout my career i worked on different projects with different technologies and frameworks for develop Web Apps, Mobile Apps, Desktop App and Games.</p>
-              <Carousel responsive={responsive} infinite={true} className="skill-slider" >
-                {
-                  logos.map((logo, index) => {
-                    return <ImagesLogos logoName={logo} key={index}/>
-                  })
-                }
+              <p>Throughout my career I worked on different projects with various technologies and frameworks, developing Web Apps, Mobile Apps, Desktop App and Games. These are some of my skills.</p>
+              <div className='carousel-bx'>
+                <Carousel autoPlay={true} autoPlaySpeed={2000} responsive={responsive} infinite={true} className="skill-slider" >
+                  {
+                    logos.map((logo, index) => {
+                      return <ImagesLogos logoName={logo} key={index} />
+                    })
+                  }
 
-              </Carousel>
+                </Carousel>
+              </div>
             </div>
           </Col>
         </Row>
@@ -71,24 +73,24 @@ export const Skills = () => {
 }
 
 
-export const ImagesLogos = ({logoName, className}) => {
+export const ImagesLogos = ({ logoName, className }) => {
 
-  if(logoName.includes('firebase')){
-    className='firebase_logo';
+  if (logoName.includes('firebase')) {
+    className = 'firebase_logo';
   }
-  else if(logoName.includes('unity')){
-    className='unity_logo';
+  else if (logoName.includes('unity')) {
+    className = 'unity_logo';
   }
-  else if(logoName.includes('sql')){
-    className='sql_logo';
+  else if (logoName.includes('sql')) {
+    className = 'sql_logo';
   }
   else {
-    className='item';
+    className = 'item';
   }
 
-  return(
+  return (
     <div className={className}>
-      <img src={logoName} alt={logoName}/>
-  </div>
+      <img src={logoName} alt={logoName} />
+    </div>
   );
 }
