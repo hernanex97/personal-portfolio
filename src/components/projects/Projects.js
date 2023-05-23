@@ -8,6 +8,7 @@ import leagofgols from "../../assets/projects-images/leagofgoals.png"
 import foresthope from "../../assets/projects-images/foresthope.png"
 import electrons from "../../assets/projects-images/electrons.png"
 import oversoft from "../../assets/projects-images/OVERSOFT.png"
+import watchviewer from "../../assets/projects-images/watchviewer.png"
 import uif from "../../assets/projects-images/uif.png"
 import ibm from "../../assets/projects-images/ibm.png"
 import './Projects.css';
@@ -49,6 +50,14 @@ export const Projects = () => {
             description: "Find your Electron 💘⚡ 2 Players Game. Made With Unity.",
             imgUrl: electrons,
             url: "https://pressstartteam.itch.io/electron",
+            classButton: "playbutton",
+            buttonSTR: "Play"
+        },
+        {
+            title: "WatchViewer",
+            description: "A Viewer of 3D Models. Made with Unity",
+            imgUrl: watchviewer,
+            url: "https://simmer.io/@hernoanddog/watchviewer",
             classButton: "playbutton",
             buttonSTR: "Play"
         },
