@@ -1,23 +1,23 @@
 self.__precacheManifest = [
   {
-    "revision": "79f13792008d9a160a0b",
-    "url": "/personal-portfolio/static/css/main.e6e52734.chunk.css"
+    "revision": "347b6f840eb07df190b2",
+    "url": "/personal-portfolio/static/css/main.d6efba46.chunk.css"
   },
   {
-    "revision": "79f13792008d9a160a0b",
-    "url": "/personal-portfolio/static/js/main.3d18f8ad.chunk.js"
+    "revision": "347b6f840eb07df190b2",
+    "url": "/personal-portfolio/static/js/main.d7f3b3b5.chunk.js"
   },
   {
     "revision": "919df7781af4fef99075",
     "url": "/personal-portfolio/static/js/runtime~main.e5e62f4e.js"
   },
   {
-    "revision": "7df29211884ddb258cd3",
-    "url": "/personal-portfolio/static/css/2.ca3c34b9.chunk.css"
+    "revision": "49f3f10d0005a3ceb7f2",
+    "url": "/personal-portfolio/static/css/2.2aca7caf.chunk.css"
   },
   {
-    "revision": "7df29211884ddb258cd3",
-    "url": "/personal-portfolio/static/js/2.bddfa12d.chunk.js"
+    "revision": "49f3f10d0005a3ceb7f2",
+    "url": "/personal-portfolio/static/js/2.c6344a34.chunk.js"
   },
   {
     "revision": "797739ac1b5698394f96",
@@ -112,12 +112,12 @@ self.__precacheManifest = [
     "url": "/personal-portfolio/static/media/contact-img.a8822e20.svg"
   },
   {
-    "revision": "17629a5dfe0d3c3946cf401e1895f091",
-    "url": "/personal-portfolio/static/media/revicons.17629a5d.ttf"
-  },
-  {
     "revision": "04eb8fc57f27498e5ae37523e3bfb2c7",
     "url": "/personal-portfolio/static/media/revicons.04eb8fc5.woff"
+  },
+  {
+    "revision": "17629a5dfe0d3c3946cf401e1895f091",
+    "url": "/personal-portfolio/static/media/revicons.17629a5d.ttf"
   },
   {
     "revision": "2feb69ccb596730c72920c6ba3e37ef8",
@@ -128,10 +128,6 @@ self.__precacheManifest = [
     "url": "/personal-portfolio/static/media/new-footer-bg.45625b8b.png"
   },
   {
-    "revision": "4ea3794d631bedab7999678f46b0a162",
-    "url": "/personal-portfolio/static/media/CentraNo2-Bold.4ea3794d.ttf"
-  },
-  {
     "revision": "386f05946a76935fcabf319affff517a",
     "url": "/personal-portfolio/static/media/CentraNo2-Book.386f0594.ttf"
   },
@@ -140,7 +136,11 @@ self.__precacheManifest = [
     "url": "/personal-portfolio/static/media/CentraNo2-Medium.63911e85.ttf"
   },
   {
-    "revision": "daea9d9ce6c3477441655a4b3c90774d",
+    "revision": "4ea3794d631bedab7999678f46b0a162",
+    "url": "/personal-portfolio/static/media/CentraNo2-Bold.4ea3794d.ttf"
+  },
+  {
+    "revision": "01d7af4d7ad7246faaeb18aa1e78b6cb",
     "url": "/personal-portfolio/index.html"
   }
 ];
