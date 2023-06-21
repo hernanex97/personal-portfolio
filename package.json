@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "type": "module",
   "private": true,
-  "homepage": "https://hernanex97.github.io/personal-portfolio",
+  "homepage": "https://hernanexposito.com",
+  "proxy": "http://localhost:5000",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
