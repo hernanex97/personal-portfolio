@@ -8,12 +8,13 @@
 
 .navbarbrand {
     padding-top: 1.5% !important;
+    display: flex;
 }
 
 nav.navbar {
     padding: 18px 0;
     position: fixed;
-    width: 90%;
+    width: 100%;
     top: 0;
     z-index: 9999;
     transition: 0.32s ease-in-out;
@@ -25,17 +26,24 @@ nav.navbar.scrolled {
 }
 
 
-@media (max-) {
-    
-}
+@media (max-) {}
 
 @media (max-width:991px) {
     nav.navbar .navbar-nav .nav-link.navbar-link {
-        padding: 0px 0px 3px 11px !important;
-    } 
+        padding: 0px 0px 8px 11px !important
 
-    .navbarbrand navbar-brand{
-        margin-right: 17px !important;
+    }
+
+    .navbar-brand {
+        padding-top: 3.5% !important;
+        margin-right: none !important;
+        font-size: var(--bs-navbar-brand-font-size);
+        color: var(--bs-navbar-brand-color);
+        display: flex;
+    }
+
+    .social-icon {
+        margin-left: 100px !important;
     }
 }
 
@@ -60,7 +68,8 @@ span.social-icon {
 
 .social-icon {
     display: inline-block;
-    margin-left: 14px;
+    margin-top: -3px;
+    margin-left: 50px;
 }
 
 .social-icon a {
@@ -199,6 +208,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     border-color: transparent;
 }
 
-.navbar-collapse collapse show{
+.navbar-collapse collapse show {
     margin: -15px !important;
 }

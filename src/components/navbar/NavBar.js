@@ -37,6 +37,9 @@ export const NavBar = () => {
                     </Navbar.Toggle>
                     <Navbar.Brand className="navbarbrand" href="#home">
                         <p className="logo-text-1">Expósito Hernán</p>
+                        <div className='social-icon'>
+                            <a href="https://www.linkedin.com/in/expositohernan/" target="_blank" rel="noreferrer noopener"><img src={navIcon1} alt="" ></img></a>
+                        </div>
                     </Navbar.Brand>
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
@@ -47,9 +50,6 @@ export const NavBar = () => {
                             {/* <Nav.Link href="https://www.linkedin.com/in/expositohernan/" target="_blank" className={activeLink === 'linkedin' ? 'active navbar-link' : 'navbar-link'}>LinkedIn</Nav.Link> */}
                         </Nav>
                     </Navbar.Collapse>
-                    <div className='social-icon'>
-                        <a href="https://www.linkedin.com/in/expositohernan/" target="_blank" rel="noreferrer noopener"><img src={navIcon1} alt="" ></img></a>
-                    </div>
                 </Container>
             </Navbar>
         </section>
