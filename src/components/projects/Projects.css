@@ -121,8 +121,8 @@
 
 .proj-imgbx::before {
   content: "";
-  background: linear-gradient(90.21deg, #082174 -5.91%, #3db3fc 111.58%);
-  opacity: 0.85;
+  background: linear-gradient(180deg, #082174 -5.91%, #10669b 111.58%);
+  opacity: 0.9;
   position: absolute;
   width: 100%;
   height: 0;
@@ -181,7 +181,7 @@
 
 .playbutton {
   margin-top: -15px;
-  background-color: #2541BF !important;
+  /* background-color: #2541BF !important; */
   border: none !important;
   width: 100%;
 }
@@ -189,10 +189,17 @@
 
 .playbutton:hover {
   margin-top: -15px;
-  background-color: #10278e !important;
+  /* background-color: #10278e !important; */
   border: none !important;
   width: 100%;
 
+}
+
+.playbutton btn btn-primary,
+.playbutton btn btn-primary:hover,
+.playbutton btn btn-primary:active,
+.playbutton btn btn-primary:visited {
+  background-color: none !important;
 }
 
 
@@ -203,4 +210,11 @@
   border: none !important;
   cursor: not-allowed !important;
   width: 100%;
+}
+
+.date-bs {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 8px;
+  border-radius: 3px;
 }

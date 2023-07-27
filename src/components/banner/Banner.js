@@ -28,9 +28,7 @@ export const Banner = () => {
                                 repeat={Infinity}
                                 deletionSpeed={50}
                             />
-                            <p>I'm a Developer based in Argentina. Addicted to coffee and coding nights.
-                                Passionate about Software Development, football, videogames and music.
-                                I'm currently working at IBM.</p>
+                            <p>Based in Argentina. Addicted to coffee and coding nights. Passionate about Software Development ❤ I'm currently working at IBM.</p>
                             <button onClick={(e) => {
                                 e.preventDefault();
                                 window.location.href = '#connect';

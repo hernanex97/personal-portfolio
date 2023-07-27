@@ -66,26 +66,26 @@ export const Projects = () => {
     const workProjects = [
         {
             title: "Oversoft",
+            year: "Jan 2020 - Sep 2020",
             description: "Backend Developer Role. Technologies used: C#.NET, VB.NET, SQL SERVER",
             imgUrl: oversoft,
             classButton: "playbutton",
             url: "https://oversoft.net/",
-            buttonSTR: "Website"
         }, {
             title: "Argentine Financial Information Unit (UIF)",
+            year: "Sep 2020 - Jun 2021",
             description: "Full Stack .NET Developer. Technologies used: C#.NET, .NET CORE, ASP.NET, SQL SERVER, Entity Framework, Git, Microsoft TFS.",
             imgUrl: uif,
             classButton: "playbutton",
             url: "https://www.argentina.gob.ar/uif",
-            buttonSTR: "Website"
         },
         {
             title: "IBM",
+            year: "Jun 2021 - Present",
             description: "Developer and Consultant. Working in projects with multiple clients like Banks & TelCo. Technologies: Openshift, K8s, Docker, API Connect, Watson Assistant, Python, JavaScript.",
             imgUrl: ibm,
             classButton: "playbutton",
             url: "https://www.ibm.com",
-            buttonSTR: "Website"
         }
     ]
 
@@ -95,26 +95,30 @@ export const Projects = () => {
             <Container>
                 <Row>
                     <Col>
-                        <h2>Projects</h2>
+                        <h2>Experience</h2>
                         <p>
-                            I had the opportunity to work with a team of developers, who are also friends of mine. Together, we funded Press Start Games, and we developed some of the following games - which were showcased at events in Buenos Aires, Argentina. I'm also currently working as a Developer and Consultant of Integration at IBM, on Expert Lab's team.</p>
+                            I'm currently working as a Developer and Consultant of Integration on Expert Lab's team at IBM.<br />
+                            Also, i had the opportunity to work with a team of developers, who are also friends of mine.
+                            Together, we funded Press Start Games, and we developed some of the following games - which were showcased at events in Buenos Aires, Argentina.
+                        </p>
                         <Tab.Container id="projects-tabs" defaultActiveKey="first">
                             <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                                 <Nav.Item>
-                                    <Nav.Link eventKey="first">Games</Nav.Link>
+                                    <Nav.Link eventKey="first">Professional Experience</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link eventKey="second">Work</Nav.Link>
+                                    <Nav.Link eventKey="second">Video Games Proyects</Nav.Link>
                                 </Nav.Item>
                                 {/* <Nav.Item>
                                     <Nav.Link eventKey="third">Games</Nav.Link>
                                 </Nav.Item> */}
                             </Nav>
+                            <p>¡mouseover the cards!</p>
                             <Tab.Content>
                                 <Tab.Pane eventKey="first">
                                     <Row>
                                         {
-                                            gameprojects.map((project, index) => {
+                                            workProjects.map((project, index) => {
                                                 return (
                                                     <ProjectCard key={index} {...project} />
                                                 )
@@ -125,7 +129,7 @@ export const Projects = () => {
                                 <Tab.Pane eventKey="second">
                                     <Row>
                                         {
-                                            workProjects.map((project, index) => {
+                                            gameprojects.map((project, index) => {
                                                 return (
                                                     <ProjectCard key={index} {...project} />
                                                 )

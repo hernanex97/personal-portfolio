@@ -28,6 +28,7 @@ export const NavBar = () => {
         setActiveLink(value);
     }
 
+    var hernoex_text = "< Herno Ex />"
     return (
         <section id="home">
             <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
@@ -36,7 +37,7 @@ export const NavBar = () => {
                         <span className='navbar-toggler-icon'></span>
                     </Navbar.Toggle>
                     <Navbar.Brand className="navbarbrand" href="#home">
-                        <p className="logo-text-1">Expósito Hernán</p>
+                        <p className="logo-text-1">{hernoex_text}</p>
                         <div className='social-icon'>
                             <a href="https://www.linkedin.com/in/expositohernan/" target="_blank" rel="noreferrer noopener"><img src={navIcon1} alt="" ></img></a>
                         </div>
