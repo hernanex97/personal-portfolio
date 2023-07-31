@@ -218,3 +218,15 @@
   padding: 8px;
   border-radius: 3px;
 }
+
+.div-link {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+.linkButton{
+  display: inline-block !important;
+  text-align: center !important;
+  color: #fff !important;
+  text-decoration: none !important;
+}

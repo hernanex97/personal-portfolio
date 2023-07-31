@@ -2,6 +2,7 @@ import React from 'react';
 import { useState } from "react"
 import { Container, Row, Col } from "react-bootstrap";
 import contactImg from "../../assets/img/contact-img.svg";
+import sendMailGif from "../../assets/img/send-email.gif";
 require('./Contact.css');
 
 export const Contact = ({ title, description, imgUrl }) => {
@@ -54,12 +55,13 @@ export const Contact = ({ title, description, imgUrl }) => {
         <section className="contact" id="connect">
             <Container>
                 <Row className="align-items-center">
-                    <Col md={6}>
-                        <img src={contactImg} alt="Contact Us" />
+                    <Col className="imgCol" md={6}>
+                        {/* <img src={contactImg} alt="Contact Us" /> */}
+                        <img className="sendMailGif" src={sendMailGif}></img>
                     </Col>
-                    <Col md={6}>
-                        <h2>Get in Touch</h2>
-                        <h3>Let's work together!</h3>
+                    <Col className="contact-text" md={6}>
+                        <h2 className='getintouch'>Get in Touch</h2>
+                        <h3 className='worktogether'>Let's work together!</h3>
                         <h3 className='mail-text'>
                             <a href="mailto:hernancs10@gmail.com?subject=Let's work together&body=Hello Hernán, ">hernancs10@gmail.com</a>
                         </h3>

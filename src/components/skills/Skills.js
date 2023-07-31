@@ -52,7 +52,7 @@ export const Skills = () => {
           <Col>
             <div className="skill-bx">
               <h2>Skills</h2>
-              <p>Throughout my career I worked on different projects with various technologies and frameworks, developing Web Apps, Mobile Apps, Desktop App and Games. These are some of my skills.</p>
+              <p>Throughout my career I worked on different projects with various technologies and frameworks, developing <b>Web Apps, Mobile Apps, Desktop App and Games. These are some of my skills.</b></p>
               <div className='carousel-bx'>
                 <Carousel autoPlay={true} autoPlaySpeed={2000} responsive={responsive} infinite={true} className="skill-slider" >
                   {

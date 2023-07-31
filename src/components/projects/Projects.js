@@ -17,49 +17,50 @@ export const Projects = () => {
     const gameprojects = [
         {
             title: "Fast Cars",
+            year: "2019",
             description: "Mobile Game where you are a 🚗 thief and the police starts to chase you. ¿How long can you scape from the police? Made With Unity.",
             imgUrl: fastcars,
             url: "https://pressstartteam.itch.io/brakeless",
-            classButton: "playbutton",
-            buttonSTR: "Play"
+            classButton: "linkButton",
         }, {
             title: "League of Goals",
+            year: "2020",
             description: "Desktop Local Fútbol ⚽ Game. 2vs2 game with Lego inspiration idea. Made With Unity.",
             imgUrl: leagofgols,
-            classButton: "playbutton_not",
-            buttonSTR: "Not Available"
+            classButton: "linkButton",
+            url: "Not Available"
         },
         {
             title: "Office Hero",
+            year: "2020",
             description: "You're a Junior Developer starting a new job. Try to survive the office 💀 Made With Unity.",
             imgUrl: officehero,
             url: "https://jangames.itch.io/office-hero",
-            classButton: "playbutton",
-            buttonSTR: "Play"
-        },
-        {
-            title: "Forest Hope",
-            description: "Humans are irresponsible 😡 Save the forest from the fire! Made With Unity.",
-            imgUrl: foresthope,
-            url: "https://pressstartteam.itch.io/forest-hope",
-            classButton: "playbutton",
-            buttonSTR: "Play"
-        },
-        {
-            title: "Electron Attraction",
-            description: "Find your Electron 💘⚡ 2 Players Game. Made With Unity.",
-            imgUrl: electrons,
-            url: "https://pressstartteam.itch.io/electron",
-            classButton: "playbutton",
-            buttonSTR: "Play"
+            classButton: "linkButton",
         },
         {
             title: "WatchViewer",
+            year: "2020",
             description: "A Viewer of 3D Models. Made with Unity",
             imgUrl: watchviewer,
             url: "https://simmer.io/@hernoanddog/watchviewer",
-            classButton: "playbutton",
-            buttonSTR: "Play"
+            classButton: "linkButton",
+        },
+        {
+            title: "Forest Hope",
+            year: "2021",
+            description: "Humans are irresponsible 😡 Save the forest from the fire! Made With Unity.",
+            imgUrl: foresthope,
+            url: "https://pressstartteam.itch.io/forest-hope",
+            classButton: "linkButton",
+        },
+        {
+            title: "Electron Attraction",
+            year: "2021",
+            description: "Find your Electron 💘⚡ 2 Players Game. Made With Unity.",
+            imgUrl: electrons,
+            url: "https://pressstartteam.itch.io/electron",
+            classButton: "linkButton",
         },
     ]
 
@@ -69,14 +70,14 @@ export const Projects = () => {
             year: "Jan 2020 - Sep 2020",
             description: "Backend Developer Role. Technologies used: C#.NET, VB.NET, SQL SERVER",
             imgUrl: oversoft,
-            classButton: "playbutton",
+            classButton: "linkButton",
             url: "https://oversoft.net/",
         }, {
             title: "Argentine Financial Information Unit (UIF)",
             year: "Sep 2020 - Jun 2021",
             description: "Full Stack .NET Developer. Technologies used: C#.NET, .NET CORE, ASP.NET, SQL SERVER, Entity Framework, Git, Microsoft TFS.",
             imgUrl: uif,
-            classButton: "playbutton",
+            classButton: "linkButton",
             url: "https://www.argentina.gob.ar/uif",
         },
         {
@@ -84,7 +85,7 @@ export const Projects = () => {
             year: "Jun 2021 - Present",
             description: "Developer and Consultant. Working in projects with multiple clients like Banks & TelCo. Technologies: Openshift, K8s, Docker, API Connect, Watson Assistant, Python, JavaScript.",
             imgUrl: ibm,
-            classButton: "playbutton",
+            classButton: "linkButton",
             url: "https://www.ibm.com",
         }
     ]
@@ -97,9 +98,9 @@ export const Projects = () => {
                     <Col>
                         <h2>Experience</h2>
                         <p>
-                            I'm currently working as a Developer and Consultant of Integration on Expert Lab's team at IBM.<br />
+                            I'm currently working as a <b>Developer and Consultant of Integration on Expert Lab's team at IBM</b>.<br />
                             Also, i had the opportunity to work with a team of developers, who are also friends of mine.
-                            Together, we funded Press Start Games, and we developed some of the following games - which were showcased at events in Buenos Aires, Argentina.
+                            Together, we funded Press Start Games. Down here are a few games we've done and some of them were showcased at events in Buenos Aires, Argentina.
                         </p>
                         <Tab.Container id="projects-tabs" defaultActiveKey="first">
                             <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
@@ -113,7 +114,7 @@ export const Projects = () => {
                                     <Nav.Link eventKey="third">Games</Nav.Link>
                                 </Nav.Item> */}
                             </Nav>
-                            <p>¡mouseover the cards!</p>
+                            {/* <p>¡mouseover the cards!</p> */}
                             <Tab.Content>
                                 <Tab.Pane eventKey="first">
                                     <Row>

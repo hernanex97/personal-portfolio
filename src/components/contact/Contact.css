@@ -85,6 +85,10 @@
   width: 100%;
 }
 
+.worktogether{
+  margin-bottom: 30px !important;
+}
+
 .mail-text a {
   color: white;
   text-decoration: underline;
@@ -97,3 +101,38 @@
   font-weight: 400;
   transition: 0.5;
 }
+
+@media (max-width:600px) {
+  .imgCol{
+    display: flex !important;
+    justify-content: center !important;
+    margin-bottom: 30px;
+  }
+
+  .sendMailGif{
+    align-items: center;
+  }
+
+  .getintouch{
+    margin-bottom: 30px;
+    display: flex;
+  }
+
+  .worktogether{
+    margin-bottom: 30px !important;
+    display: flex !important;
+    justify-content: center !important;
+  }
+
+  .mail-text{
+    margin-bottom: 30px !important;
+    display: flex !important;
+    justify-content: center !important;
+  }
+
+  .contact-text {
+    display: grid;
+    justify-content: center;
+  }
+}
+
