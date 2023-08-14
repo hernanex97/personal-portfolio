@@ -56,8 +56,8 @@ export const Contact = ({ title, description, imgUrl }) => {
             <Container>
                 <Row className="align-items-center">
                     <Col className="imgCol" md={6}>
-                        {/* <img src={contactImg} alt="Contact Us" /> */}
-                        <img className="sendMailGif" src={sendMailGif}></img>
+                        <img src={contactImg} alt="Contact Us" />
+                        {/* <img className="sendMailGif" src={sendMailGif}></img> */}
                     </Col>
                     <Col className="contact-text" md={6}>
                         <h2 className='getintouch'>Get in Touch</h2>
